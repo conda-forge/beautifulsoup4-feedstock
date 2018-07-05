@@ -7,21 +7,24 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Screen-scraping library
+Summary: Python library designed for screen-scraping
 
+Beautiful Soup is a library for pulling data out of HTML and XML files.
+It provides ways of navigating, searching, and modifying parse trees.
 
 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/beautifulsoup4-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/beautifulsoup4-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/beautifulsoup4-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/beautifulsoup4-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/beautifulsoup4-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/beautifulsoup4-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/beautifulsoup4-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/beautifulsoup4-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/beautifulsoup4/badges/version.svg)](https://anaconda.org/conda-forge/beautifulsoup4)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/beautifulsoup4/badges/downloads.svg)](https://anaconda.org/conda-forge/beautifulsoup4)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-beautifulsoup4-green.svg)](https://anaconda.org/conda-forge/beautifulsoup4) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/beautifulsoup4.svg)](https://anaconda.org/conda-forge/beautifulsoup4) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/beautifulsoup4.svg)](https://anaconda.org/conda-forge/beautifulsoup4) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/beautifulsoup4.svg)](https://anaconda.org/conda-forge/beautifulsoup4) |
 
 Installing beautifulsoup4
 =========================
@@ -66,6 +69,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
