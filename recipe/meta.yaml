@@ -1,16 +1,15 @@
 {% set version = "4.6.1" %}
-{% set name = "beautifulsoup4" %}
 
 package:
-  name: {{ name }}
+  name: beautifulsoup4
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/b/beautifulsoup4/beautifulsoup4-{{ version }}.tar.gz
   sha256: bd43a3b26d2886acd63070c43da821b60dea603eb6d45bab0294aac6129adbfa
 
 build:
+  # use 2to3 and cannot be noarch
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
@@ -18,7 +17,6 @@ requirements:
   host:
     - python
     - pip
-    - setuptools
   run:
     - python
 
