@@ -10,7 +10,7 @@ source:
 
 build:
   # use 2to3 and cannot be noarch
-  number: 1000
+  number: 1001
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -19,6 +19,7 @@ requirements:
     - pip
   run:
     - python
+    - soupsieve
 
 test:
   imports:
