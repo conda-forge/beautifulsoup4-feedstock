@@ -11,7 +11,9 @@ source:
 build:
   # Uses 2to3 and cannot be noarch.
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script:
+    - del /f /q NEWS.txt  # [win and py27]
+    - "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
