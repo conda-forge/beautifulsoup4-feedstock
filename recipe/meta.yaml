@@ -1,4 +1,4 @@
-{% set version = "4.8.0" %}
+{% set version = "4.8.1" %}
 
 package:
   name: beautifulsoup4
@@ -6,12 +6,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/b/beautifulsoup4/beautifulsoup4-{{ version }}.tar.gz
-  sha256: 25288c9e176f354bf277c0a10aa96c782a6a18a17122dba2e8cec4a97e03343b
+  sha256: 6135db2ba678168c07950f9a16c4031822c6f4aec75a65e0a97bc5ca09789931
 
 build:
   # Uses 2to3 and cannot be noarch.
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script:
+    - del /f /q NEWS.txt  # [win and py27]
+    - "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
