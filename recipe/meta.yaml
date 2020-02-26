@@ -11,21 +11,31 @@ source:
 build:
   # Uses 2to3 and cannot be noarch.
   number: 0
-  script:
-    - del /f /q NEWS.txt  # [win and py27]
-    - "{{ PYTHON }} -m pip install . --no-deps -vv"
 
-requirements:
-  host:
-    - python
-    - pip
-  run:
-    - python
-    - soupsieve >=1.2
+outputs:
+  - name: beautifulsoup4
+    script: build_base.bat  # [win]
+    script: build_base.sh  # [not win]
+    requirements:
+      host:
+        - python
+        - pip
+      run:
+        - python
+        - soupsieve >=1.2
+    test:
+      imports:
+        - bs4
 
-test:
-  imports:
-    - bs4
+  - name: bs4
+    build:
+      noarch: generic
+    requirements:
+      run:
+        - {{ pin_subpackage('beautifulsoup4', max_pin="x.x.x") }}
+    test:
+      imports:
+        - bs4
 
 about:
   home: http://www.crummy.com/software/BeautifulSoup/

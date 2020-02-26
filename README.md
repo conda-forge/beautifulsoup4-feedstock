@@ -170,6 +170,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-beautifulsoup4-green.svg)](https://anaconda.org/conda-forge/beautifulsoup4) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/beautifulsoup4.svg)](https://anaconda.org/conda-forge/beautifulsoup4) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/beautifulsoup4.svg)](https://anaconda.org/conda-forge/beautifulsoup4) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/beautifulsoup4.svg)](https://anaconda.org/conda-forge/beautifulsoup4) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-bs4-green.svg)](https://anaconda.org/conda-forge/bs4) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/bs4.svg)](https://anaconda.org/conda-forge/bs4) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/bs4.svg)](https://anaconda.org/conda-forge/bs4) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/bs4.svg)](https://anaconda.org/conda-forge/bs4) |
 
 Installing beautifulsoup4
 =========================
@@ -180,10 +181,10 @@ Installing `beautifulsoup4` from the `conda-forge` channel can be achieved by ad
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `beautifulsoup4` can be installed with:
+Once the `conda-forge` channel has been enabled, `beautifulsoup4, bs4` can be installed with:
 
 ```
-conda install beautifulsoup4
+conda install beautifulsoup4 bs4
 ```
 
 It is possible to list all of the versions of `beautifulsoup4` available on your platform with:
