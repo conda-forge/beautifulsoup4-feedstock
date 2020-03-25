@@ -10,7 +10,7 @@ source:
 
 build:
   # Uses 2to3 and cannot be noarch.
-  number: 0
+  number: 1
 
 outputs:
   - name: beautifulsoup4
