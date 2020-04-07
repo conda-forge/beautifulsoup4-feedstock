@@ -22,7 +22,8 @@ outputs:
         - pip
       run:
         - python
-        - soupsieve >=1.2
+        - soupsieve >=1.2  # [py3k]
+        - soupsieve <2.0  # [py2k]
     test:
       imports:
         - bs4
