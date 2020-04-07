@@ -26,6 +26,11 @@ outputs:
     test:
       imports:
         - bs4
+        - bs4.builder
+      commands:
+        - pip check
+      requires:
+        - pip
 
   - name: bs4
     build:
