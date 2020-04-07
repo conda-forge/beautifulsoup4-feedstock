@@ -1,4 +1,4 @@
-{% set version = "4.8.2" %}
+{% set version = "4.9.0" %}
 
 package:
   name: beautifulsoup4
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/b/beautifulsoup4/beautifulsoup4-{{ version }}.tar.gz
-  sha256: 05fd825eb01c290877657a56df4c6e4c311b3965bda790c613a3d6fb01a5462a
+  sha256: 594ca51a10d2b3443cbac41214e12dbb2a1cd57e1a7344659849e2e20ba6a8d8
 
 build:
   # Uses 2to3 and cannot be noarch.
-  number: 1
+  number: 0
 
 outputs:
   - name: beautifulsoup4
@@ -22,10 +22,16 @@ outputs:
         - pip
       run:
         - python
-        - soupsieve >=1.2
+        - soupsieve >=1.2  # [py3k]
+        - soupsieve <2.0  # [py2k]
     test:
       imports:
         - bs4
+        - bs4.builder
+      commands:
+        - pip check
+      requires:
+        - pip
 
   - name: bs4
     build:
