@@ -9,21 +9,21 @@ source:
   sha256: 73cc4d115b96f79c7d77c1c7f7a0a8d4c57860d1041df407dd1aae7f07a77fd7
 
 build:
-  # Uses 2to3 and cannot be noarch.
-  number: 0
+  number: 1
 
 outputs:
   - name: beautifulsoup4
+    build:
+      noarch: python
     script: build_base.bat  # [win]
     script: build_base.sh  # [not win]
     requirements:
       host:
-        - python
+        - python >=3.6
         - pip
       run:
-        - python
-        - soupsieve >=1.2  # [py3k]
-        - soupsieve <2.0  # [py2k]
+        - python >=3.6
+        - soupsieve >=1.2
     test:
       imports:
         - bs4
