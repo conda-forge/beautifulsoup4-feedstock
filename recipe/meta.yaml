@@ -9,7 +9,7 @@ source:
   sha256: 73cc4d115b96f79c7d77c1c7f7a0a8d4c57860d1041df407dd1aae7f07a77fd7
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: beautifulsoup4
