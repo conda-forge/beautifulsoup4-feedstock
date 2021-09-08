@@ -1,4 +1,4 @@
-{% set version = "4.9.3" %}
+{% set version = "4.10.0" %}
 
 package:
   name: beautifulsoup4
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/b/beautifulsoup4/beautifulsoup4-{{ version }}.tar.gz
-  sha256: 84729e322ad1d5b4d25f805bfa05b902dd96450f43842c4e99067d5e1369eb25
+  sha256: c23ad23c521d818955a4151a67d81580319d4bf548d3d49f4223ae041ff98891
 
 build:
   number: 0
