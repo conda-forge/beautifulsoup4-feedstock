@@ -1,11 +1,11 @@
-About beautifulsoup4
-====================
+About beautifulsoup4-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/beautifulsoup4-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.crummy.com/software/BeautifulSoup/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/beautifulsoup4-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python library designed for screen-scraping
 
