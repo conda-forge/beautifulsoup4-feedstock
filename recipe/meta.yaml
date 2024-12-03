@@ -23,6 +23,7 @@ outputs:
         - cross-python_{{ target_platform }}     # [build_platform != target_platform]
       host:
         - python {{ python_min }}
+        - hatchling
         - pip
       run:
         - python >={{ python_min }}
