@@ -28,6 +28,7 @@ outputs:
       run:
         - python >={{ python_min }}
         - soupsieve >=1.2
+        - typing-extensions
     test:
       imports:
         - bs4
